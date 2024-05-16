@@ -161,7 +161,7 @@
       --font-size-large: 1.8rem;
       --font-size-x-large: 2.3rem;
       --font-size-xx-large: 4.8rem;
-      --font-weight-refular: 400;
+      --font-weight-regular: 400;
       --font-weight-bold: 700;
       --line-height-small: 1.2;
       --line-height-base: 1.5;
@@ -220,7 +220,7 @@
       color: var(--text-color);
       font-family: var(--font-family-base);
       font-size: var(--font-size-medium);
-      font-weight: var(--font-weight-refular);
+      font-weight: var(--font-weight-regular);
       line-height: var(--line-height-base);
     }
   
@@ -385,57 +385,6 @@
       color: var(--color-primary);
     }
 
-    .cardwork .card-outer {
-      position: relative;
-      overflow: hidden;
-    }
-    
-    .cardwork .card-image img {
-        height: 30rem;
-        width: 100%;
-        object-fit: cover;
-        vertical-align: bottom;
-    }
-
-    .cardwork .card-inner {
-      position: absolute;
-      top: -0.1rem;
-      left: -0.1rem;
-      right: -0.1rem;
-      z-index: 1;
-    }
-
-    .card:hover .card-inner {
-      background-color: rgba(0, 0, 0, 0.7);
-    }
-
-    .cardwork .card-title {
-      text-align: center;
-      margin: 0;
-      opacity: 0;
-      height: 100%;
-      position: relative;
-    }
-
-    .cardwork .card-title a {
-      display: block;
-      text-decoration: none;
-      padding-top: 45%;
-    }
-
-    .cardwork .card-title a::after {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      content: "";
-    }
-
-    .cardwork:hover .card-title {
-      opacity: 1;
-    }
-
     .section {
       padding: var(--section-padding);
     }
@@ -519,4 +468,55 @@
 
     .social-link > svg {
       fill: var(--text-color);
+    }
+
+    .card-work .card-outer {
+    position: relative;
+    overflow: hidden;
+    }
+
+    .card-work .card-image img {
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+    }
+
+    .card-work .card-inner {
+    position: absolute;
+    top: -0.1rem;
+    left: -0.1rem;
+    right: -0.1rem;
+    z-index: 1;
+    }
+
+    .card-work:hover .card-inner {
+    background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .card-work .card-title {
+    text-align: center;
+    margin: 0;
+    opacity: 0;
+    height: 100%;
+    position: relative;
+    }
+
+    .card-work .card-title a {
+    display: block;
+    text-decoration: none;
+    padding-top: 45%;
+    }
+
+    .card-work .card-title a::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    content: "";
+    }
+
+    .card-work:hover .card-title {
+    opacity: 1;
     }
