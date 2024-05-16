@@ -389,12 +389,12 @@
       position: relative;
       overflow: hidden;
     }
-
+    
     .cardwork .card-image img {
-      height: 30rem;
-      width: 100%;
-      object-fit: cover;
-      vertical-align: bottom;
+        height: 30rem;
+        width: 100%;
+        object-fit: cover;
+        vertical-align: bottom;
     }
 
     .cardwork .card-inner {
@@ -405,18 +405,18 @@
       z-index: 1;
     }
 
-    .cardwork:hover .card-inner {
+    .card:hover .card-inner {
       background-color: rgba(0, 0, 0, 0.7);
     }
 
     .cardwork .card-title {
-      position: absolute;
+      text-align: center;
       margin: 0;
       opacity: 0;
       height: 100%;
       position: relative;
     }
-    
+
     .cardwork .card-title a {
       display: block;
       text-decoration: none;
@@ -426,8 +426,8 @@
     .cardwork .card-title a::after {
       position: absolute;
       top: 0;
-      right: 0;
       left: 0;
+      right: 0;
       bottom: 0;
       content: "";
     }
